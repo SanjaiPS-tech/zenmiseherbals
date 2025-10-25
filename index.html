@@ -17,7 +17,6 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    /* Added smooth scroll for navigation links */
     html {
       scroll-behavior: smooth;
     }
@@ -49,7 +48,7 @@
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 4.2rem; /* Increased size for more impact */
+      font-size: 4.2rem;
       letter-spacing: 1px;
       color: #80af6e;
       font-style: italic;
@@ -58,7 +57,6 @@
       position: relative;
     }
 
-    /* Add decorative swashes before and after the title */
     header h1::before,
     header h1::after {
       content: "✿";
@@ -70,16 +68,11 @@
       opacity: 0.7;
     }
 
-    header h1::before {
-      left: -3rem;
-    }
-
-    header h1::after {
-      right: -3rem;
-    }
+    header h1::before { left: -3rem; }
+    header h1::after { right: -3rem; }
 
     header p {
-      font-size: 1.2rem; /* Stays 1.2rem on desktop */
+      font-size: 1.2rem;
       color: #5f6e57;
       margin-top: 10px;
     }
@@ -90,7 +83,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 40px; /* Stays 40px on desktop */
+      gap: 40px;
       padding: 15px 0;
       background: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(8px);
@@ -112,13 +105,13 @@
 
     section {
       max-width: 1100px;
-      margin: 100px auto; /* Stays 100px on desktop */
+      margin: 100px auto;
       padding: 0 20px;
       text-align: center;
     }
 
     h2 {
-      font-size: 2rem; /* Stays 2rem on desktop */
+      font-size: 2rem;
       color: #3e5535;
       margin-bottom: 20px;
     }
@@ -133,7 +126,6 @@
 
     .grid {
       display: grid;
-      /* This line was already perfectly responsive! Great job. */
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
@@ -216,47 +208,27 @@
       margin-top: 100px;
     }
 
-    /* ======================================= */
-    /* == RESPONSIVE RULES FOR MOBILE/TABLET == */
-    /* ======================================= */
-    @media (max-width: 768px) {
-      header {
-        /* You could optionally reduce header height on mobile */
-        /* height: 80vh; */
-      }
-
-      header h1 {
-        font-size: 2.8rem; /* Adjusted for mobile but keeping it prominent */
-      }
-
-      /* Hide decorative elements on mobile for cleaner look */
-      header h1::before,
-      header h1::after {
-        display: none;
-      }
-
-      header p {
-        font-size: 1rem; /* Smaller subtitle for mobile */
-      }
-
-      nav {
-        gap: 25px; /* Reduce gap between nav links */
-        padding: 15px 10px; /* Add a little horizontal padding */
-      }
-
-      nav a {
-        font-size: 0.95rem; /* Slightly smaller nav text */
-      }
-
-      section {
-        margin: 60px auto; /* Reduce top/bottom space for sections */
-      }
-
-      h2 {
-        font-size: 1.7rem; /* Smaller section headings */
-      }
+    footer a {
+      color: #395f2e;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
 
+    footer a:hover {
+      color: #7fb87c;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.8rem; }
+      header h1::before,
+      header h1::after { display: none; }
+      header p { font-size: 1rem; }
+      nav { gap: 25px; padding: 15px 10px; }
+      nav a { font-size: 0.95rem; }
+      section { margin: 60px auto; }
+      h2 { font-size: 1.7rem; }
+    }
   </style>
 </head>
 <body>
@@ -311,6 +283,10 @@
 
   <footer>
     <p>© 2025 Zenmise Herbals — Crafted in Nature, Inspired by Calm.</p>
+    <p>
+      Follow us on 
+      <a href="https://www.instagram.com/zenmistherbals/" target="_blank">Instagram</a>
+    </p>
   </footer>
 </body>
 </html>
